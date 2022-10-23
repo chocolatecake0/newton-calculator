@@ -20,7 +20,7 @@ let getAll = () => {
     getIterationAmount()
     eq()
     graph()
-    result()
+    allAnswers.map((x, index) => result(x, index))
 }
 let eq = () => {
     let eq = math.evaluate(equation, {x:number})
@@ -37,15 +37,14 @@ let eq = () => {
 }
 
 
-let result = () => {
+let result = (x, index) => {
     let p = document.createElement("p")
-    let content = document.createTextNode(`result is equal to ${answer}`)
+    let content = document.createTextNode(`${index+1}. result is equal to ${x}`)
     p.appendChild(content)
-    let resultDiv = document.getElementById("result")
+    let resultDiv = document.getElementById("allAnswers")
     resultDiv.appendChild(p) 
 }
 
-let putAnswers = () => {
-    let button = document.createElement("button")
-    let content = document.createTextNode(`result is equal to ${answer}`)
+let clear = () => {
+    
 }
