@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+}
+
+.container {
+    background-color: aqua;
+    width: 200px;
+    height: 400px;
+    float: left;
+    border: 1px solid black;
+    overflow: auto;
+}
+.inputContainer {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+.flexbox {
+    width: auto;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+}
+.another {
+    background-color: lightGray;
+    width: 550px;
+    text-align: center;
+}

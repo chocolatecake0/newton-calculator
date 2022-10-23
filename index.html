@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="math.js" type="text/javascript"></script>
+    <script src="d3.js" type="text/javascript"></script>
+    <script src="index.js"></script>
+    <script src="graph.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+    <div class="inputContainer">
+    <p>Please Write The Equation Here</p>
+    <input id="equation">
+    <br>
+    </div>
+    <div class="inputContainer">
+    <p>Start From a Number</p>
+    <input id="number" type="number">
+    </div>
+    <div class="inputContainer">
+    <p>Write the Iteration Count Here</p>
+    <input id="iteration" type="number">
+    </div>
+    <br>
+    <br>
+    <div class="flexbox">
+    <button onclick="getAll()" class="start">Start</button>
+    </div>
+    <div id="result"></div>
+    </div>
+    <div id="allAnswers" class="container"></div>
+    <div id="graphic" class="container another">
+    </div>
+</body>
+</html>
