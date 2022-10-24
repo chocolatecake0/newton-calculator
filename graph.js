@@ -8,7 +8,6 @@ const svg = d3.select("#graphic")
               .append("svg")
               .attr("width", w)
               .attr("height", h);
-console.log(svg)
 svg.selectAll("rect")
    .data(dataset)
    .enter()
@@ -26,4 +25,5 @@ svg.selectAll("text")
    .text((d) => d)
    .attr("x", (d, i) => i * 30)
    .attr("y", (d, i) => h - (3 * d) - 3)
+   .attr("size", 5)
 }

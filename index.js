@@ -45,6 +45,3 @@ let result = (x, index) => {
     resultDiv.appendChild(p) 
 }
 
-let clear = () => {
-    
-}
